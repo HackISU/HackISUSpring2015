@@ -164,7 +164,6 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default {
-    border-color: transparent;
     background-color: #222;
 }
 
@@ -258,11 +257,18 @@ fieldset[disabled] .btn-xl.active {
 header {
     text-align: center;
     color: #fff;
-    background: #222;
+    background-attachment: scroll;
+    background-image: url(../img/isu.jpg);
+    background-position: center center;
+    background-repeat: none;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+header .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 header .intro-text {
