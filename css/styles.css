@@ -21,10 +21,7 @@ p.large {
 }
 
 a,
-a:hover,
-a:focus,
-a:active,
-a.active {
+a:hover {
     outline: 0;
 }
 
@@ -32,10 +29,7 @@ a {
     color: #fed136;
 }
 
-a:hover,
-a:focus,
-a:active,
-a.active {
+a:hover {
     color: #fec503;
 }
 
@@ -52,6 +46,14 @@ h6 {
 
 .img-centered {
     margin: 0 auto;
+}
+
+.icon-red {
+    color: #cc0000;
+}
+
+.icon-yellow {
+    color: #fec503;
 }
 
 .bg-light-gray {
@@ -205,10 +207,13 @@ fieldset[disabled] .btn-xl.active {
     color: #fff;
 }
 
-.navbar-default .nav li a:hover,
-.navbar-default .nav li a:focus {
+.navbar-default .nav li a:hover {
     outline: 0;
     color: #fed136;
+}
+
+.navbar-default .nav li a:focus {
+    color: #fff;
 }
 
 .navbar-default .navbar-nav>.active>a {
@@ -268,7 +273,7 @@ header {
 }
 
 header .overlay {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 header .intro-text {
@@ -343,8 +348,20 @@ section h3.section-subheading {
 }
 
 .service-heading {
-    margin: 15px 0;
+    margin-top: 25px;
     text-transform: none;
+}
+
+#about .service-heading {
+}
+
+#about .fa-stack {
+    color: #fff;
+}
+
+#about .fa-circle {
+    border-radius: 100%;
+    border: 2px solid #d1d1d1;
 }
 
 .timeline {
@@ -361,7 +378,7 @@ section h3.section-subheading {
     left: 40px;
     width: 2px;
     margin-left: -1.5px;
-    background-color: #f1f1f1;
+    background-color: #d1d1d1;
 }
 
 .timeline>li {
@@ -403,11 +420,10 @@ section h3.section-subheading {
     width: 80px;
     height: 80px;
     margin-left: 0;
-    border: 7px solid #f1f1f1;
+    border: 2px solid #d1d1d1;
     border-radius: 100%;
     text-align: center;
-    color: #fff;
-    background-color: #000000;
+    background-color: #fff;
 }
 
 .timeline>li .timeline-icon h4 {
@@ -417,8 +433,8 @@ section h3.section-subheading {
 }
 
 .timeline-icon .fa {
-    padding-right: 5px;
-    margin-top: 7px;
+    padding-right: 2px;
+    margin-top: 10px;
 }
 
 .timeline-ending h4 {
@@ -659,9 +675,7 @@ ul.social-buttons li a {
     transition: all .3s;
 }
 
-ul.social-buttons li a:hover,
-ul.social-buttons li a:focus,
-ul.social-buttons li a:active {
+ul.social-buttons li a:hover {
     background-color: #fed136;
 }
 
