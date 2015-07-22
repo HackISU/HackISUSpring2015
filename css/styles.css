@@ -352,9 +352,6 @@ section h3.section-subheading {
     text-transform: none;
 }
 
-#about .service-heading {
-}
-
 #about .fa-stack {
     color: #fff;
 }
@@ -362,6 +359,10 @@ section h3.section-subheading {
 #about .fa-circle {
     border-radius: 100%;
     border: 2px solid #d1d1d1;
+}
+
+#about #location {
+    margin-top: 50px;
 }
 
 .timeline {
