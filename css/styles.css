@@ -33,6 +33,18 @@ a:hover {
     color: #fec503;
 }
 
+@media (min-width: 768px) {
+    .apply {
+        border: solid 1px #fff;
+        margin-right: 5px;
+        padding-bottom: -1px;
+    }
+
+    .nav li {
+        padding-top: 1px;
+    }
+}
+
 h1,
 h2,
 h3,
@@ -114,14 +126,15 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn-xl {
-    padding: 20px 40px;
+    margin: 5px;
+    width: 200px;
     border-color: #fed136;
     border-radius: 3px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
     font-weight: 700;
-    color: #fff;
+    color: #222;
     background-color: #fed136;
 }
 
@@ -131,7 +144,6 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
     border-color: #f6bf01;
-    color: #fff;
     background-color: #fec503;
 }
 
@@ -139,6 +151,13 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
     background-image: none;
+}
+
+@media (min-width: 768px) {
+    .btn, .btn-x1 {
+        padding: 20px;
+        width: 250px;
+    }
 }
 
 .btn-xl.disabled,
@@ -218,13 +237,17 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
-    color: #fff;
+    color: #222;
     background-color: #fed136;
 }
 
-.navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-    color: #fff;
+    color: #222;
+    background-color: #fec503;
+}
+
+.navbar-default .navbar-nav>.active>a:hover {
+    color: #222;
     background-color: #fec503;
 }
 
@@ -352,9 +375,6 @@ section h3.section-subheading {
     text-transform: none;
 }
 
-#about .service-heading {
-}
-
 #about .fa-stack {
     color: #fff;
 }
@@ -362,6 +382,14 @@ section h3.section-subheading {
 #about .fa-circle {
     border-radius: 100%;
     border: 2px solid #d1d1d1;
+}
+
+#about #location {
+    margin-top: 50px;
+}
+
+#about .btn {
+    color: #222;
 }
 
 .timeline {
