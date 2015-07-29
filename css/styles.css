@@ -37,6 +37,7 @@ a:hover {
     .apply {
         border: solid 1px #fff;
         margin-right: 5px;
+        margin-left: 10px;
         padding-bottom: -1px;
     }
 
