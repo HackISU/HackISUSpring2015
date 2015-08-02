@@ -206,8 +206,8 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-toggle {
-    border-color: #fed136;
-    background-color: #fed136;
+    border-color: #aa0000;
+    background-color: #cc0000;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -216,7 +216,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #fed136;
+    background-color: #aa0000;
 }
 
 .navbar-default .nav li a {
@@ -229,7 +229,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .nav li a:hover {
     outline: 0;
-    color: #fed136;
+    color: #fff;
 }
 
 .navbar-default .nav li a:focus {
@@ -238,18 +238,18 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
-    color: #222;
-    background-color: #fed136;
+    color: #fff;
+    background-color: #cc0000;
 }
 
 .navbar-default .navbar-nav>.active>a:focus {
-    color: #222;
-    background-color: #fec503;
+    color: #fff;
+    background-color: #cc0000;
 }
 
 .navbar-default .navbar-nav>.active>a:hover {
-    color: #222;
-    background-color: #fec503;
+    color: #fff;
+    background-color: #aa0000;
 }
 
 @media(min-width:768px) {
@@ -745,7 +745,7 @@ ul.social-buttons li a {
 }
 
 ul.social-buttons li a:hover {
-    background-color: #fed136;
+    background-color: #cc0000;
 }
 
 .btn:focus,
