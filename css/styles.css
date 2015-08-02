@@ -8,7 +8,7 @@ body {
 }
 
 .text-primary {
-    color: #222;
+    color: #181818;
 }
 
 p {
@@ -26,11 +26,11 @@ a:hover {
 }
 
 a {
-    color: #fed136;
+    color: #5fb7ca;
 }
 
 a:hover {
-    color: #fec503;
+    color: #3ea3b8;
 }
 
 @media (min-width: 768px) {
@@ -62,11 +62,11 @@ h6 {
 }
 
 .icon-red {
-    color: #cc0000;
+    color: #3d97bf;
 }
 
 .icon-yellow {
-    color: #fec503;
+    color: #85c9d8;
 }
 
 .bg-light-gray {
@@ -74,16 +74,16 @@ h6 {
 }
 
 .bg-darkest-gray {
-    background-color: #222;
+    background-color: #181818;
 }
 
 .btn-primary {
-    border-color: #fed136;
+    border-color: #5fb7ca;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #fff;
-    background-color: #fed136;
+    background-color: #5fb7ca;
 }
 
 .btn-primary:hover,
@@ -91,9 +91,8 @@ h6 {
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-    border-color: #f6bf01;
     color: #fff;
-    background-color: #fec503;
+    background-color: #3ea3b8;
 }
 
 .btn-primary:active,
@@ -117,26 +116,26 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    border-color: #fed136;
-    background-color: #fed136;
+    border-color: #5fb7ca;
+    background-color: #5fb7ca;
 }
 
 .btn-primary .badge {
-    color: #fed136;
+    color: #5fb7ca;
     background-color: #fff;
 }
 
 .btn-xl {
     margin: 5px;
     width: 200px;
-    border-color: #fed136;
+    border-color: #5fb7ca;
     border-radius: 3px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
     font-weight: 700;
-    color: #222;
-    background-color: #fed136;
+    color: #fff;
+    background-color: #5fb7ca;
 }
 
 .btn-xl:hover,
@@ -144,8 +143,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-    border-color: #f6bf01;
-    background-color: #fec503;
+    color: #fff;
+    background-color: #3ea3b8;
 }
 
 .btn-xl:active,
@@ -176,29 +175,30 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl.disabled.active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
-    border-color: #fed136;
-    background-color: #fed136;
+    color: #fff;
+    border-color: #5fb7ca;
+    background-color: #5fb7ca;
 }
 
 .btn-xl .badge {
-    color: #fed136;
+    color: #5fb7ca;
     background-color: #fff;
 }
 
 .navbar-default {
-    background-color: #222;
+    background-color: #181818;
 }
 
 .navbar-default .navbar-brand {
     font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
-    color: #fed136;
+    color: #fff;
 }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-    color: #fec503;
+    color: #fff;
 }
 
 .navbar-default .navbar-collapse {
@@ -206,8 +206,8 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-toggle {
-    border-color: #aa0000;
-    background-color: #cc0000;
+    border-color: #265970;
+    background-color: #3d97bf;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -216,7 +216,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #aa0000;
+    background-color: #265970;
 }
 
 .navbar-default .nav li a {
@@ -229,7 +229,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .nav li a:hover {
     outline: 0;
-    color: #fff;
+    color: #85c9d8;
 }
 
 .navbar-default .nav li a:focus {
@@ -239,17 +239,17 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
     color: #fff;
-    background-color: #cc0000;
+    background-color: #3d97bf;
 }
 
 .navbar-default .navbar-nav>.active>a:focus {
     color: #fff;
-    background-color: #cc0000;
+    background-color: #3d97bf;
 }
 
 .navbar-default .navbar-nav>.active>a:hover {
     color: #fff;
-    background-color: #aa0000;
+    background-color: #265970;
 }
 
 @media(min-width:768px) {
@@ -275,7 +275,7 @@ fieldset[disabled] .btn-xl.active {
 
     .navbar-default.navbar-shrink {
         padding: 10px 0;
-        background-color: #222;
+        background-color: #181818;
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
@@ -390,13 +390,13 @@ section h3.section-subheading {
 }
 
 #about .btn {
-    color: #222;
+    color: #181818;
 }
 
 .map-border {
     width: 100%;
     height: 452px;
-    border: 1px solid #222;
+    border: 1px solid #181818;
 }
 
 .iframe-overlay {
@@ -644,7 +644,7 @@ aside.clients img {
 }
 
 section#contact {
-    background-color: #222;
+    background-color: #181818;
 }
 
 section#contact .section-heading {
@@ -669,7 +669,7 @@ section#contact .form-group textarea.form-control {
 }
 
 section#contact .form-control:focus {
-    border-color: #fed136;
+    border-color: #5fb7ca;
     box-shadow: none;
 }
 
@@ -738,14 +738,14 @@ ul.social-buttons li a {
     line-height: 40px;
     outline: 0;
     color: #fff;
-    background-color: #222;
+    background-color: #181818;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s;
 }
 
 ul.social-buttons li a:hover {
-    background-color: #cc0000;
+    background-color: #3d97bf;
 }
 
 .btn:focus,
@@ -810,7 +810,7 @@ ul.social-buttons li a:hover {
     width: 1px;
     height: 75px;
     margin-left: 35px;
-    background-color: #222;
+    background-color: #181818;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -820,7 +820,7 @@ ul.social-buttons li a:hover {
     z-index: 1052;
     width: 1px;
     height: 75px;
-    background-color: #222;
+    background-color: #181818;
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
@@ -833,12 +833,12 @@ ul.social-buttons li a:hover {
 
 ::-moz-selection {
     text-shadow: none;
-    background: #fed136;
+    background: #5fb7ca;
 }
 
 ::selection {
     text-shadow: none;
-    background: #fed136;
+    background: #5fb7ca;
 }
 
 img::selection {
@@ -850,5 +850,5 @@ img::-moz-selection {
 }
 
 body {
-    webkit-tap-highlight-color: #fed136;
+    webkit-tap-highlight-color: #5fb7ca;
 }
