@@ -393,6 +393,16 @@ section h3.section-subheading {
     color: #222;
 }
 
+.temp-sponsor-logo {
+    font-size: 17px;
+    height: 100px;
+    width: 200px;
+    padding: 25px 10px;
+    margin-bottom: 5px;
+    color: #9C9C9C;
+    background-color: #C9C9C9;
+}
+
 .map-border {
     width: 100%;
     height: 452px;
