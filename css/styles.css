@@ -346,6 +346,10 @@ header .intro-text .intro-heading {
     }
 }
 
+.text-closed-application {
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
 section {
     padding: 100px 0;
 }
