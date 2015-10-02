@@ -62,11 +62,23 @@ h6 {
 }
 
 .icon-red {
-    color: #cc0000;
+    color: #822433;
 }
 
 .icon-yellow {
-    color: #fec503;
+    color: #FDC82F;
+}
+
+.icon-white{
+    color:#ffffff;
+}
+
+.background-red{
+	background-color:#822433;
+}
+
+.background-yellow{
+	background-color:#FDC82F;
 }
 
 .bg-light-gray {
@@ -91,9 +103,9 @@ h6 {
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-    border-color: #f6bf01;
-    color: #fff;
-    background-color: #fec503;
+    border-color: #822433;
+    color: #FDC82F;
+    background-color: #822433;
 }
 
 .btn-primary:active,
@@ -117,7 +129,7 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    border-color: #fed136;
+    border-color: #822433;
     background-color: #fed136;
 }
 
@@ -129,14 +141,14 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl {
     margin: 5px;
     width: 200px;
-    border-color: #fed136;
+    border-color: #822433;
     border-radius: 3px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
     font-weight: 700;
-    color: #222;
-    background-color: #fed136;
+    color: #FDC82F;
+    background-color: #822433;
 }
 
 .btn-xl:hover,
@@ -144,8 +156,9 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-    border-color: #f6bf01;
-    background-color: #fec503;
+    border-color: #FDC82F;
+    background-color: #FDC82F;
+    color: #822433
 }
 
 .btn-xl:active,
@@ -198,7 +211,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-    color: #fec503;
+    color: #822433;
 }
 
 .navbar-default .navbar-collapse {
@@ -207,7 +220,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-toggle {
     border-color: #aa0000;
-    background-color: #cc0000;
+    background-color: #822433;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -238,13 +251,13 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
-    color: #fff;
-    background-color: #cc0000;
+    color: #FDC82F;
+    background-color: #822433;
 }
 
 .navbar-default .navbar-nav>.active>a:focus {
-    color: #fff;
-    background-color: #cc0000;
+    color: #FDC82F;
+    background-color: #822433;
 }
 
 .navbar-default .navbar-nav>.active>a:hover {
