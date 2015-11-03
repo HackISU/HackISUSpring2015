@@ -3,6 +3,12 @@ body {
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+*, *:before, *:after {
+    -webkit-box-sizing: border-box; /* Needed for mobile WebKit */
+    -moz-box-sizing: border-box; /* Needed for Firefox */
+    box-sizing: border-box
+}
+
 .text-muted {
     color: #777;
 }
@@ -35,7 +41,7 @@ a:hover {
 
 @media (min-width: 768px) {
     .apply {
-        border: solid 1px #fff;
+        border: solid 1px #222;
         margin-right: 5px;
         margin-left: 10px;
         padding-bottom: -1px;
@@ -199,7 +205,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default {
-    background-color: #222;
+    background-color: #fff;
 }
 
 .navbar-default .navbar-brand {
@@ -237,16 +243,16 @@ fieldset[disabled] .btn-xl.active {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
-    color: #fff;
+    color: #222;
 }
 
 .navbar-default .nav li a:hover {
     outline: 0;
-    color: #fff;
+    color: #222;
 }
 
 .navbar-default .nav li a:focus {
-    color: #fff;
+    color: #222;
 }
 
 .navbar-default .navbar-nav>.active>a {
@@ -261,7 +267,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-nav>.active>a:hover {
-    color: #fff;
+    color: #222;
     background-color: #aa0000;
 }
 
@@ -288,7 +294,7 @@ fieldset[disabled] .btn-xl.active {
 
     .navbar-default.navbar-shrink {
         padding: 10px 0;
-        background-color: #222;
+        background-color: #fff;
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
@@ -310,7 +316,7 @@ header {
 }
 
 header .overlay {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
 header .intro-text {
@@ -320,9 +326,7 @@ header .intro-text {
 
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 22px;
-    font-style: italic;
     line-height: 22px;
 }
 
@@ -343,9 +347,7 @@ header .intro-text .intro-heading {
 
     header .intro-text .intro-lead-in {
         margin-bottom: 25px;
-        font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
         font-size: 40px;
-        font-style: italic;
         line-height: 40px;
     }
 
@@ -360,7 +362,7 @@ header .intro-text .intro-heading {
 }
 
 .text-closed-application {
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 section {
@@ -376,7 +378,7 @@ section h2.section-heading {
 section h3.section-subheading {
     margin-bottom: 75px;
     text-transform: none;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 16px;
     font-style: italic;
     font-weight: 400;
@@ -682,10 +684,6 @@ section#faq .question-group {
 
 aside.clients img {
     margin: 50px auto;
-}
-
-section#contact {
-    background-color: #222;
 }
 
 section#contact .section-heading {
