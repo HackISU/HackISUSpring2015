@@ -20,6 +20,10 @@ body {
     width: 100%;
 }
 
+.about_wrapper {
+    height: 185px;
+}
+
 .text-muted {
     color: #777;
 }
