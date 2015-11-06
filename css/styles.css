@@ -9,6 +9,17 @@ body {
     box-sizing: border-box
 }
 
+.highlight-yellow-box {
+    background-color: rgba(255,255,255,.3);
+    padding: 5px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #DDA80F;
+    display: inline-block;
+    width: 100%;
+}
+
 .text-muted {
     color: #777;
 }
@@ -681,6 +692,16 @@ section h3.section-subheading {
 section#faq .question-group {
     margin-top: 50px;
 }
+
+.question-group {
+    display: flex;
+}
+
+.faq_wrapper {
+    display: flex;
+}
+
+
 
 aside.clients img {
     margin: 50px auto;
