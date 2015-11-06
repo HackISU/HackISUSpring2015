@@ -21,7 +21,7 @@ body {
 }
 
 .about_wrapper {
-    height: 185px;
+    min-height: 185px;
 }
 
 .text-muted {
@@ -701,8 +701,20 @@ section#faq .question-group {
     display: flex;
 }
 
+@media (max-width: 600px) {
+    .question-group {
+        display: inherit;
+        margin-top: 0px !important;
+    }
+    
+    .hideOnMobile {
+        display: none;
+    }
+}
+
 .faq_wrapper {
     display: flex;
+    margin: 13px 0px;
 }
 
 
