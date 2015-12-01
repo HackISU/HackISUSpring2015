@@ -38,15 +38,22 @@
     <header>
         <div class="overlay">
             <div class="container">
-                <div class="intro-text">
-                    <div class="intro-lead-in icon-red">Success!</div>
-                    <h2 class="section-heading icon-red">You've Registered for HackISU Spring 2016!</h2>
-                    <div class="form-group">
-                      <label for="resume" class="icon-red">Enter your resume URL to share it with our sponsors:</label>
-                      <input type="text" class="form-control" id="resume" placeholder="http://example.com/your/resume/url">
+                <div class="intro-text" style="padding-top:100px">
+                    <div class="intro-heading">
+                        <img style="width:25%" src="./img/hackathonlogo2.png"/>
                     </div>
-
-                    <div onclick="postData()" class="btn btn-xl">Return</div>
+                    <h2 class="section-heading icon-red">Success! You've Registered for HackISU Spring 2016!</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4 class="icon-red">Your resume URL to share it with our sponsors:</h4>
+                        </div>
+                        <div class="col-md-6 form-group">
+                          <input type="text" class="form-control" id="resume" placeholder="http://example.com/your/resume/url">
+                        </div>
+                        <div onclick="postData()" class="btn btn-xl">Return</div>
+                        </div>
+                        <div class="col-md-4"></div>
+                    </div>
                 </div>
             </div>
         </div>
