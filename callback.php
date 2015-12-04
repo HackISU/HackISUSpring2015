@@ -44,37 +44,82 @@
                     </div>
                     <h2 class="section-heading icon-red">Success! You've Registered for HackISU Spring 2016!</h2>
                     <div class="row">
-                        <div class="col-md-6">
                             <h4 class="icon-red">Your resume URL to share it with our sponsors:</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 form-group"></div>
+                        <div class="col-md-2 form-group">
+                          <!--input type="text" class="form-control" id="resume" placeholder="http://example.com/your/resume/url"-->
+                            <input type="file" name="fileselect" id="fileselect"></input>
                         </div>
-                        <div class="col-md-6 form-group">
-                          <input type="text" class="form-control" id="resume" placeholder="http://example.com/your/resume/url">
-                        </div>
-                        <div onclick="postData()" class="btn btn-xl">Return</div>
-                        </div>
-                        <div class="col-md-4"></div>
+                        <div class="col-md-5 form-group"></div>
+                    </div>
+                    <div class="row">
+                        <div onclick="postData()" class="btn btn-xl">Submit</div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
     <script>
-        function postData(){
-            var token = getUrlParameter("access_token");
+    $(document).ready(function(){
+
+    });
+
+                var file;
+
+            // Set an event listener on the Choose File field.
+            $('#fileselect').bind("change", function(e) {
+              var files = e.target.files || e.dataTransfer.files;
+              // Our file var now holds the selected file
+              file = files[0];
+            });
+
+        var postData = function(){
+
             var resume = $("#resume").val();
 
+            if (!file){
+                addData("");
+                return;
+            }
+
+            var serverUrl = 'https://api.parse.com/1/files/' + file.name;
+
+          $.ajax({
+            type: "POST",
+            beforeSend: function(request) {
+              request.setRequestHeader("X-Parse-Application-Id", '0FVA52cDu3JzTMyNGFuhrHRu19lIlRJN2jT0NVQd');
+              request.setRequestHeader("X-Parse-REST-API-Key", 'dwQxzzeJEbRNygTjBh3LNaE3kO4hPiVXhoegcreq');
+              request.setRequestHeader("Content-Type", file.type);
+            },
+            url: serverUrl,
+            data: file,
+            processData: false,
+            contentType: false,
+            success: function(data) {
+                addData(data.url);
+            },
+            error: function(data) {
+              var obj = jQuery.parseJSON(data);
+              //alert(obj.error);
+            }
+          });
+        }
+
+        var addData = function(url){
+            var token = getUrlParameter("access_token");
             $.ajax({
                     type: "POST",
                     url: "http://hackisu-signup.herokuapp.com/signup",
-                    data: JSON.stringify({token:token,resume:resume}),
+                    data: JSON.stringify({token:token,resume:url}),
                     contentType: "application/json; charset=utf-8",
                     dataType: "json",
                     success: function(data){
-                        //console.log(data);
+                        console.log(data);
+                        //window.location.assign("http://hackisu.com");
                     }
             });
-
-            window.location.assign("http://hackisu.com");
         }
 
         var getUrlParameter = function getUrlParameter(sParam) {
