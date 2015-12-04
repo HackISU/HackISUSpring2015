@@ -42,9 +42,9 @@
                     <div class="intro-heading">
                         <img style="width:25%" src="./img/hackathonlogo2.png"/>
                     </div>
-                    <h2 class="section-heading icon-red">Success! You've Registered for HackISU Spring 2016!</h2>
+                    <h2 class="section-heading icon-red">Congrats! You've almost registered for HackISU Spring 2016!</h2>
                     <div class="row">
-                            <h4 class="icon-red">Your resume URL to share it with our sponsors:</h4>
+                            <h4 class="resume-form icon-red">Upload your resume to share it with our sponsors (optional):</h4>
                     </div>
                     <div class="row">
                         <div class="col-md-5 form-group"></div>
@@ -55,7 +55,8 @@
                         <div class="col-md-5 form-group"></div>
                     </div>
                     <div class="row">
-                        <div onclick="postData()" class="btn btn-xl">Submit</div>
+                        <div onclick="postData()" class="resume-form btn btn-xl">Submit</div>
+                        <h2 id="uploading" class="section-heading icon-red" style="display:none">Uploading....</h2>
                     </div>
                 </div>
             </div>
@@ -85,7 +86,8 @@
             }
 
             var serverUrl = 'https://api.parse.com/1/files/' + file.name;
-
+            $(".resume-form").hide();
+            $("#uploading").show();
           $.ajax({
             type: "POST",
             beforeSend: function(request) {
@@ -116,8 +118,8 @@
                     contentType: "application/json; charset=utf-8",
                     dataType: "json",
                     success: function(data){
-                        console.log(data);
-                        //window.location.assign("http://hackisu.com");
+                        //console.log(data);
+                        window.location.assign("http://hackisu.com");
                     }
             });
         }
