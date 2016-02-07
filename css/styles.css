@@ -78,6 +78,19 @@ h6 {
     font-weight: 700;
 }
 
+.vertical-align {
+  display: flex;
+  flex-direction: row;
+}
+
+.vertical-align > [class^="col-"],
+.vertical-align > [class*=" col-"] {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Optional, to align inner items
+                              horizontally inside the column */
+}
+
 .img-centered {
     margin: 0 auto;
 }
