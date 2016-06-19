@@ -31,7 +31,10 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    <script>
+        var REDIRECT_URL = "URL"
+        var CLIENT_ID = "ID"
+    </script>
 </head>
 
 <body id="page-top" class="index">
@@ -59,7 +62,7 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-<!--                    <li>
+                    <li>
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
@@ -73,13 +76,10 @@
                     </li>
                     <li>
                         <a class="page-scroll" href="#faq">FAQ</a>
-		    </li>
-                    <li>
-		    <a class="" href="http://my.mlh.io/oauth/authorize?client_id=<hey_there>&redirect_uri=http://hackisu.com/callback.html&response_type=token">Apply</a>
-		    </li>-->
-                    <!--li class="apply">
-                        <a class="page-scroll" href="http://hackisu.com/apply" title="apply" target="_blank">Apply</a>
-                    </li-->
+		            </li>
+                    <li class="apply">
+                        <a onclick="toMLH()">Apply</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -96,48 +96,36 @@
                         <img style="width:25%" src="./img/hackathonlogo2.png"/>
                         <img style="width:65%" src="./img/hackisu.png"/>
                     </div>
-		            <div class="intro-lead-in icon-red">Fall 2016</div>
-                    <h2 class="section-heading icon-red">We're gearing up for the next greatest HackISU! See you soon!</h2>
-		    <!--                     <a href="http://my.mlh.io/oauth/authorize?client_id=<hey_team>&redirect_uri=http://hackisu.com/callback.html&response_type=token" class="btn btn-xl">Apply!</a> -->
+		            <div class="intro-lead-in icon-red">September 16-18, 2016</div>
+                    <h2 class="section-heading icon-red">It's back again.</h2>
+		            <button onclick="toMLH()" class="apply-lnk btn btn-xl" href="">Apply!</button>
                 </div>
             </div>
         </div>
     </header>
 
     <!-- About Section -->
-<!--    <section id="about" class="background-yellow">
+    <section id="about" class="background-yellow">
 
         <div class="container">
 
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading icon-red">About</h2>
-                    <h3 class="section-subheading ">We're back for a fifth event!</h3>
+                    <h3 class="section-subheading ">Get ready for number six!</h3>
                 </div>
                 <canvas class="all hideOnMobile" style="margin-top:-100%" ></canvas>
             </div>
             <div class="row">
                 <div class="col-md-4 text-center">
-                    <span class="fa-stack fa-4x about-icon">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-terminal fa-stack-1x icon-red"></i>
-                    </span>
                     <h4 class="service-heading text-center icon-red">Hack</h4>
                     <p class="text-muted text-left highlight-yellow-box about_wrapper">"A hackathon (also known as a hack day, hackfest or codefest) is an event in which computer programmers and others involved in software development and hardware development, including graphic designers, interface designers and project managers, collaborate intensively on software projects." <a href="https://en.wikipedia.org/wiki/Hackathon">(Wikipedia)</a></p>
                 </div>
                 <div class="col-md-4 text-center">
-                    <span class="fa-stack fa-4x about-icon">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-exchange fa-stack-1x icon-yellow"></i>
-                    </span>
                     <h4 class="service-heading text-center icon-red">Network</h4>
                     <p class="text-muted text-left highlight-yellow-box about_wrapper">At HackISU, we want to create the best opportunity we can for you to network with peers and our sponsoring companies.  We will designate time for you to find teams, meet companies, and view other team's hacks.</p>
                 </div>
                 <div class="col-md-4 text-center">
-                    <span class="fa-stack fa-4x about-icon">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-child fa-stack-1x icon-red"></i>
-                    </span>
                     <h4 class="service-heading icon-red">Learn</h4>
                     <p class="text-muted text-left highlight-yellow-box about_wrapper">We bring in mentors from sponsoring companies around the midwest and the country to help with any problems you might have. HackISU is the perfect place to learn a new language, framework, or technology.</p>
                 </div>
@@ -149,121 +137,32 @@
     	    <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading icon-yellow">Location</h2>
-                    <h3 class="section-subheading icon-white">The CPMI Event Center</h3>
+                    <h3 class="section-subheading icon-white">The Applied Technology Hub</h3>
                     <div class="map-border">
                         <div class="iframe-overlay" onClick="style.pointerEvents='none'"></div>
                         <iframe width="100%" height="450" frameborder="0" style="border:0"
-                            src="https://www.google.com/maps/embed/v1/place?q=CPMI+Event+Center,+Ames,+IA,+United+States&key=AIzaSyBmiEfQOAabHHUJJ8EdNjWRSddpdYUVW0A" allowfullscreen></iframe>
+                            src="https://www.google.com/maps/embed/v1/place?q=2710+South+Loop+Drive,+Ames,+IA,+United+States&key=AIzaSyBmiEfQOAabHHUJJ8EdNjWRSddpdYUVW0A" allowfullscreen></iframe>
                     </div>
                 </div>
                 <canvas class="all hideOnMobile" style="margin-top:-100%" ></canvas>
             </div>
         </div>
     </section>
-    -->
 
     <!-- Sponsors Section -->
-    <!--<section id="sponsors" class="background-yellow">
+    <section id="sponsors" class="background-yellow">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading icon-red">Sponsors</h2>
-
+                    <h3 class="section-subheading">Interested in sponsoring? Send an email to <a href="mailto:hi@hackisu.org" style="color:blue">hi@hackisu.org</a></h3>
                 </div>
                 <canvas class="all" style="margin-top:-100%;" ></canvas>
             </div>
-            <div class="row vertical-align">
-                <div class="col-md-4 col-sm-12">
-                    <a href="https://www.workiva.com/">
-                        <img src="img/Workiva-Logo-Digital_and_Web.png" class="img-large img-responsive img-centered" alt="Workiva" />
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <a href="http://www.squareonedsm.com">
-                        <img src="img/squareone.png" class="img-small img-responsive img-centered" alt="SquareOne DSM" />
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <a href="http://www.sukup.com">
-                        <img src="img/RevisedLogoGreen.png" class="img-small img-responsive img-centered" alt="Sukup" />
-                    </a>
-                </div>
-            </div>
-            <div class="row row-push vertical-align">
-                <div class="col-md-3 col-sm-12">
-                    <a href="https://www.rockwellcollins.com/">
-                        <img src="img/RClogo_col_rgb.png" class="img-medium img-responsive img-centered" alt="Rockwell Collins" />
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-12">
-                    <a href="http://www.tradebot.com/">
-                        <img src="img/Tradebot-Logo-flat-blackOnly.png" class="img-small img-responsive img-centered" alt="Tradebot" />
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-12">
-                    <a href="http://www.optum.com/">
-                        <img src="img/OPTUM.png" class="img-small img-responsive img-centered" alt="Optum" />
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-12">
-                    <a href="http://www.gforgegroup.com/">
-                        <img src="img/gforge-logo.png" class="img-small img-responsive img-centered" alt="GForge Group" />
-                    </a>
-                </div>
-            </div>
-            <div class="row row-push vertical-align">
-                <div class="col-md-3 col-sm-12 col-md-offset-1">
-                    <a href="http://www.mavericksoftware.com/">
-                        <img src="img/maverick.png" class="img-small img-responsive img-centered" alt="Maverick Software" />
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-12">
-                    <a href="http://www.sourceallies.com">
-                        <img src="img/source-allies-logo-final.png" class="img-small img-responsive img-centered" alt="Source Allies" />
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-12">
-                    <a href="http://www.vermeer.com">
-                        <img src="img/vermeer.png" style="width:50%" class="img-small img-responsive img-centered" alt="Vermeer" />
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-12">
-                    <a href="http:/ultrapress.com">
-                        <img src="img/Ultrapress.png" style="width:50%" class="img-small img-responsive img-centered" alt="Ultrapress" />
-                    </a>
-                </div>
-            </div>
 
-            <div class="row row-center row-push vertical-align">
-                <div class="col-md-12 col-sm-12 text-center">
-                    <h2 class="section-heading">Partnered With</h2>
-                </div>
-            </div>
-            <div class="row vertical-align">
-                <div class="col-md-4 col-sm12">
-                   <img src="img/mlh-logo2.png" class="img-small img-responsive img-centered" alt="Major League Hacking" />
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <a href="http://www.youngentrepreneurconvention.com/">
-                        <img src="img/YEC_Logo.png" class="img-small img-responsive img-centered" alt="Young Entrepreneur Convention" />
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <a href="http://www.isupark.org/">
-                        <img src="img/ISU-RP-logo-horiz-rev.png" class="img-large img-responsive img-centered" style="width:100%" alt="ISU Research Park" />
-                    </a>
-                </div>
-
-            </div>
-            <div class="row">
-                <div class="col-md-12 col-sm-12 text-center">
-                  <h1 class="section-subheading text-muted" ><a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf" style="color:black">Click here to look over the MLH code of conduct.</a></h1>
-                </div>
-            </div>
         </div>
 
     </section>
-    -->
 
     <!-- Timeline Section -->
 <!--    <section id="timeline" class="background-red">
@@ -476,12 +375,12 @@
     </section>
 -->
     <!-- FAQ Section -->
-<!--    <section id="faq" class="background-yellow">
+    <section id="faq" class="background-red">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading icon-red">FAQ</h2>
-                    <h3 class="section-subheading">Frequently Asked Questions</h3>
+                    <h2 class="section-heading icon-yellow">FAQ</h2>
+                    <h3 class="section-subheading icon-white">Frequently Asked Questions</h3>
                 </div>
                 <canvas class="all hideOnMobile" style="margin-top:-100%;" ></canvas>
             </div>
@@ -567,7 +466,7 @@
             </div>
         </div>
     </section>
--->
+
     <footer>
         <div class="container">
                 <ul class="list-inline social-buttons">
@@ -601,6 +500,10 @@
 var cons = [];
 var circs = [];
 var cans = document.getElementsByClassName('all');
+
+var toMLH = function(){
+    window.location.assign("http://my.mlh.io/oauth/authorize?client_id="+CLIENT_ID+"&redirect_uri="+REDIRECT_URL+"&response_type=token");
+}
 
 for (i=0;i<cans.length;i++){
     var can = cans[i];
