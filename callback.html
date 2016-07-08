@@ -100,14 +100,15 @@
 
         var addData = function(data){
             var token = getUrlParameter("access_token");
+            var strung = JSON.stringify({
+                token:token,
+                resume:data.resume,
+                github:data.github
+            })
             $.ajax({
                     type: "POST",
-                    url: "http://hackisu-signup.herokuapp.com/signup",
-                    data: JSON.stringify({
-                        token:token,
-                        resume:data.resume,
-                        github:data.github
-                    }),
+                    url: "http://localhost:5000/signup",
+                    data: strung,
                     contentType: "application/json; charset=utf-8",
                     dataType: "json",
                     success: function(data){
