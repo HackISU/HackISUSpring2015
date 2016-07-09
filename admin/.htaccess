@@ -1,0 +1,5 @@
+AuthType Basic
+AuthName "My Protected Area"
+AuthUserFile /var/www/html/HackISUSpring2015/admin/.htpasswd
+Require valid-user
+
