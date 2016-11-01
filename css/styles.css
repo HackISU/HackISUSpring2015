@@ -20,6 +20,27 @@ body {
     width: 100%;
 }
 
+.button {
+    background-color: #822433;
+    padding: 10px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #DDA80F;
+    display: inline-block;
+    width: 30%;
+    color: icon-yellow;
+
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button:hover{
+  background-color: rgba(255,255,255,.3);
+  color: #822433;
+}
+
 .about_wrapper {
     min-height: 150px;
     padding:15px;
@@ -410,7 +431,7 @@ section h3.section-subheading {
     text-transform: none;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 16px;
-    font-style: italic;
+    font-style: normal;
     font-weight: 400;
 }
 
