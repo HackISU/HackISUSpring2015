@@ -133,12 +133,12 @@
             })
             $.ajax({
                     type: "POST",
-                    url: "http://localhost:5000/signup",
-                    data: strung,
+                    url: "https://hackisu-s17.herokuapp.com/user",
+		    data: strung,
                     contentType: "application/json; charset=utf-8",
                     dataType: "json",
                     success: function(data){
-                        window.location.assign("http://hackisu.com");
+                        window.location.assign("http://hackisu.org/success.html");
                     }
             });
         }
