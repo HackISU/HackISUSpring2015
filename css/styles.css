@@ -22,8 +22,22 @@ body {
 }
 
 #sponsors-page {
-     background-color: #FDC82F;
+     background-color: white;
 }
+
+
+ .highlight-red-box2{
+    background-color: rgba(255,255,255,.3);
+    padding: 15px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #822433;
+    display: inline-block;
+    width: 500px;
+    min-height: 400px;
+}
+
 
 .highlight-red-box {
     background-color: rgba(255,255,255,.3);
@@ -34,6 +48,26 @@ body {
     border-color: #822433;
     display: inline-block;
     width: 100%;
+
+}
+.button2{
+    background-color: #222;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #fff;;
+    color: #fff;
+    display: inline-block;
+    color: icon-yellow;
+    font-size: 3vw;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.button2:hover{
+  background-color: #822433;
+  color:  background-color: #FDC82F;
 }
 
 .button {
@@ -44,9 +78,8 @@ body {
     border-width: 2px;
     border-color: #DDA80F;
     display: inline-block;
-    width: 30%;
     color: icon-yellow;
-
+    font-size: 4.5vw;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
@@ -157,11 +190,12 @@ h6 {
 }
 
 .background-red{
-	background-color:#822433;
+	background-image: url("../img/redtone.png");
 }
 
 .background-yellow{
-	background-color:#FDC82F;
+	background-image: url("../img/halftone2.png");
+	padding: 30px;
 }
 
 .bg-light-gray {
@@ -846,6 +880,7 @@ section#contact .text-danger {
 footer {
     padding: 25px 0;
     text-align: center;
+    background-color: white;
 }
 
 footer span.copyright {
