@@ -76,9 +76,24 @@ body {
     border-radius: 5px;
     border-style: solid;
     border-width: 2px;
-    border-color: #DDA80F;
+    border-color: #822433;
     display: inline-block;
     color: icon-yellow;
+    font-size: 4.5vw;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button3 {
+    background-color: #FDC82F;
+    padding: 15px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #FDC82F;
+    display: inline-block;
+    color: #822433;
     font-size: 4.5vw;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
@@ -88,6 +103,11 @@ body {
 .button:hover{
   background-color: rgba(255,255,255,.3);
   color: #822433;
+}
+
+.button3:hover{
+  background-color: rgba(255,255,255,.3);
+  color: #FDC82F;
 }
 
 .block_yellow{
@@ -186,16 +206,17 @@ h6 {
 }
 
 .icon-white{
-    color:#ffffff;
+    color: #ffffff;
 }
 
 .background-red{
 	background-image: url("../img/redtone.png");
+    padding: 50px;
 }
 
 .background-yellow{
 	background-image: url("../img/halftone2.png");
-	padding: 30px;
+	padding: 50px;
 }
 
 .bg-light-gray {
