@@ -32,7 +32,11 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+<style>
+a{
+	color:black;
+}
+</style>
 </head>
 <body>
     <header>
@@ -43,7 +47,12 @@
                         <img style="width:25%" src="./img/hackathonlogo2.png"/>
                     </div>
                     <h2 class="section-heading icon-red">You've almost registered for HackISU!</h2>
-                    <div class="row">
+            	    <div class="row">
+			<div class="col-md-3"></div>
+			<div class="col-md-6">
+				<p class="icon-red">By registering for this event, you are agreeing to follow the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct</a>. We want HackISU to be a safe space for everyone, and the Code of Conduct helps accomplish that goal.</p></div>
+		    </div>
+		    <div class="row">
                         <div class="col-md-3"></div>
                         <div class="col-md-6">
                             <h4 class="resume-form icon-red">You're registering with the following information:</h4>
@@ -66,6 +75,8 @@
                                 </tr>
                                 </tbody>
                             </table>
+
+			    <p class="icon-red"><input type="checkbox">I agree to the terms of both the <a href="https://github.com/MLH/mlh-policies/tree/master/prize-terms-and-conditions">MLH Contest Terms and Conditions</a> and the <a href="https://mlh.io/privacy">MLH Privacy Policy</a>. Please note that you may receive pre and post-event informational e-mails and occasional messages about hackathons from MLH as per the MLH Privacy Policy.</p>
                         </div>
                         <div class="col-md-3"></div>
                     </div>
@@ -146,7 +157,7 @@
         var getData = function getData() {
             var token = getUrlParameter('access_token');
 
-            $.get("https://my.mlh.io/api/v1/user?access_token="+token, function(data) {
+            $.get("https://my.mlh.io/api/v2/user?access_token="+token, function(data) {
                 var info = data.data;
                 console.log(info);
                 $('#name').text(info.first_name + ' '+info.last_name);
