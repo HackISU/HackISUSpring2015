@@ -210,12 +210,14 @@ h6 {
 }
 
 .background-red{
-	background-image: url("../img/redtone.png");
+	/*background-image: url("../img/redtone.png");*/
+    background-color: #822433;
     padding: 50px;
 }
 
 .background-yellow{
-	background-image: url("../img/halftone2.png");
+	/*background-image: url("../img/halftone2.png");*/
+    background-color: #FDC82F;
 	padding: 50px;
 }
 
