@@ -58,7 +58,8 @@ body {
     color: #fff;
     display: inline-block;
     color: icon-yellow;
-    font-size: 3vw;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 2.5vw;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
     cursor: pointer;
@@ -79,7 +80,8 @@ body {
     border-color: #822433;
     display: inline-block;
     color: icon-yellow;
-    font-size: 4.5vw;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 2.5vw;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
@@ -94,7 +96,8 @@ body {
     border-color: #FDC82F;
     display: inline-block;
     color: #822433;
-    font-size: 4.5vw;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 2.5vw;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
