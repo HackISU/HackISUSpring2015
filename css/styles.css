@@ -467,6 +467,12 @@ header .intro-text .intro-lead-in {
     line-height: 22px;
 }
 
+header .intro-text .intro-reg-closing {
+    margin-bottom: 25px;
+    font-size: 15px;
+    line-height: 22px;
+}
+
 header .intro-text .intro-heading {
     margin-bottom: 25px;
     text-transform: uppercase;
