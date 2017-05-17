@@ -40,7 +40,8 @@
 <body id="page-top" class="index">
 
     <!-- MLH Badge-->
-<a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;left:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2017/events?utm_source=na-2017&utm_medium=TrustBadge&utm_campaign=na-2017&utm_content=red" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2017/red.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
+    <!-- TODO Uncomment when MLH 2018 season starts! -->
+<!-- <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;left:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2017/events?utm_source=na-2017&utm_medium=TrustBadge&utm_campaign=na-2017&utm_content=red" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2017/red.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a> -->
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -76,9 +77,10 @@
                     <li>
                         <a class="page-scroll" href="#faq">FAQ</a>
 		            </li>
-                    <li class="apply" style="cursor:pointer">
+                    <!-- TODO Uncomment when registration starts -->
+                    <!-- <li class="apply" style="cursor:pointer">
                         <a onclick="toMLH()">Register</a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -92,13 +94,15 @@
             <div class="container">
                 <div class="intro-text">
 			        <div class="intro-heading">
-                        <img style="width:25%" src="./img/hackathonlogo2.png"/>
+                        <!-- <img style="width:25%" src="./img/hackathonlogo2.png"/> -->
+                        <img style="width:32%" src="./img/newCyMakeLogo.png"/>
                         <img style="width:65%" src="./img/hackisu.png"/>
                     </div>
-		            <span class="intro-lead-in icon-red">February 24-26, 2017</span>
-                    <h2 class="section-heading icon-red">We're back to hack.</h2>
-		                    <button onclick="toMLH()" class="button" href="">Submit Project!</button>
-                    <h2 class="intro-reg-closing icon-red">Submit your team's project for judging!</h2>
+		            <span class="intro-lead-in icon-red">October 6-9, 2017</span>
+                  <!-- TODO Uncomment when registration starts -->
+                    <!-- <h2 class="section-heading icon-red">We're back to hack.</h2>
+		                    <button onclick="toMLH()" class="button" href="">Register for the Fall Hackathon!</button> --> <!-- Submit Project! -->
+                    <h2 class="intro-reg-closing icon-red">Check back soon to register for the Fall HackISU</h2>
                     <ul class="list-inline social-buttons" style="margin-top:50px;">
                         <li><a href="https://twitter.com/hackisu"><i class="fa fa-twitter"></i></a>
                         </li>
@@ -369,9 +373,12 @@ var circs = [];
 var cans = document.getElementsByClassName('all');
 
 var toMLH = function(){
-    window.location.assign("http://devpost.hackisu.org");
+    window.location.assign("http://my.mlh.io/oauth/authorize?client_id="+CLIENT_ID+"&redirect_uri="+REDIRECT_URL+"&response_type=token");
     // URL for 'Register' button
     // http://my.mlh.io/oauth/authorize?client_id="+CLIENT_ID+"&redirect_uri="+REDIRECT_URL+"&response_type=token
+
+    // URL for 'Submit Project!' button
+    // http://devpost.hackisu.org
 }
 
 for (i=0;i<cans.length;i++){
