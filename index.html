@@ -57,7 +57,7 @@
                       <span class="icon-bar"></span>
                   </button>
         <!-- Old hackisu button that took you to the top of the page -->
-        <!-- <a class="navbar-brand page-scroll" href="#page-top">HackISU</a> -->
+        <a class="navbar-brand page-scroll" href="#page-top">HackISU</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -70,7 +70,7 @@
           <li><a class="page-scroll" href="#timeline">Timeline</a></li>
           <li><a class="page-scroll" href="#faq">FAQ</a></li>
           <!-- TODO Uncomment when registration starts -->
-          <!-- <li class="apply" style="cursor:pointer"> <a onclick="toMLH()">Register</a> </li> -->
+          <li class="apply" style="cursor:pointer"> <a onclick="toMLH()">Register</a> </li>
         </ul>
       </div>
       <!-- /.navbar-collapse -->
@@ -93,11 +93,11 @@
           <!-- Submit Project! -->
 
           <!-- TODO Uncomment when registration starts -->
-          <!-- <h2 class="section-heading icon-red">We're back to hack.</h2>
-  		         <button onclick="toMLH()" class="button" href="">Register for the Fall Hackathon!</button> -->
+          <h2 class="section-heading icon-red">We're back to hack.</h2>
+  		         <button onclick="toMLH()" class="button" href="">Register for the Fall Hackathon!</button>
 
-
-          <h2 class="intro-reg-closing icon-red">Check back soon to register for the Fall HackISU</h2>
+            <!-- TODO Uncomment when event is over! -->
+          <!-- <h2 class="intro-reg-closing icon-red">Check back soon to register for the Fall HackISU</h2> -->
           <ul class="list-inline social-buttons" style="margin-top:50px;">
             <li><a href="https://twitter.com/hackisu"><i class="fa fa-twitter"></i></a></li>
             <li><a href="https://www.facebook.com/HackISU"><i class="fa fa-facebook"></i></a></li>
@@ -442,7 +442,7 @@
     var cans = document.getElementsByClassName('all');
 
     var toMLH = function() {
-      window.location.assign("http://my.mlh.io/oauth/authorize?client_id=" + CLIENT_ID + "&redirect_uri=" + REDIRECT_URL + "&response_type=token");
+      window.location.assign("http://my.mlh.io/oauth/authorize?client_id=" + "76078568bf3d8609b9b2bf9fc476ee17b02611a8c98b400c8f40bb7dd56dd58b" + "&redirect_uri=" + "success.html" + "&response_type=token");
 
       // URL for 'Register' button
       // http://my.mlh.io/oauth/authorize?client_id="+CLIENT_ID+"&redirect_uri="+REDIRECT_URL+"&response_type=token
