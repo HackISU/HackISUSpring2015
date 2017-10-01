@@ -14,37 +14,30 @@
     <!-- Bootstrap Core CSS -->
     <link href="./bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="./css/album.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/album.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet/less" type="text/css" href="less\agency.less" />
 
   </head>
 
   <body>
-    <!-- <div class="collapse bg-inverse" id="navbarHeader">
+    <div class="collapse bg-inverse" id="navbarHeader">
       <div class="container">
         <div class="row">
-          <div class="col-sm-8 py-4">
-            <h4 class="text-white">About</h4>
-            <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
-          </div>
           <div class="col-sm-4 py-4">
-            <h4 class="text-white">Contact</h4>
-            <ul class="list-unstyled">
-              <li><a href="#" class="text-white">Follow on Twitter</a></li>
-              <li><a href="#" class="text-white">Like on Facebook</a></li>
-              <li><a href="#" class="text-white">Email me</a></li>
-            </ul>
+            <p class="text-muted">Xd</p>
           </div>
         </div>
       </div>
-    </div> -->
-    <!-- <div class="navbar navbar-inverse bg-inverse">
+    </div>
+    <div class="navbar navbar-inverse bg-inverse">
       <div class="container d-flex justify-content-between">
         <a href="#" class="navbar-brand">Album</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>
-    </div> -->
+    </div>
 
     <section class="jumbotron text-center">
       <div class="container">
@@ -57,12 +50,12 @@
       </div>
     </section>
 
-    <div class="album text-muted">
+    <div class="album text-muted background-yellow">
       <div class="container">
 
         <div class="row">
           <div class="card">
-            <img src="./img/gallery/test1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Card image cap">
+            <img src="./img/gallery/test1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" style="cursor:pointer" alt="Card image cap">
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
           </div>
           <div class="card">
@@ -154,13 +147,23 @@
     </div>
   </div>
 
-    <footer class="text-muted">
-      <div class="container">
+    <footer class="text-muted background-darkgray">
+      <!-- <div class="container">
         <p class="float-right">
           <a href="#">Back to top</a>
         </p>
         <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
         <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p>
+      </div> -->
+
+      <div class="container">
+        <ul class="list-inline social-buttons">
+          <li><a href="https://twitter.com/hackisu"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.facebook.com/HackISU"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://www.instagram.com/hack_isu"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="https://www.medium.com/@hackiowastate"><i class="fa fa-medium"></i></a></li>
+        </ul>
+        <span class="copyright">&hearts; - HackISU Committee 2017</span>
       </div>
     </footer>
 

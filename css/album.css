@@ -38,6 +38,7 @@ body {
   padding: .75rem;
   margin-bottom: 2rem;
   border: 0;
+  border-radius: 0;
 }
 
 .card > img {
@@ -58,8 +59,43 @@ footer p {
   margin-bottom: .25rem;
 }
 
-/*Lightbox*/
+/*Social Media Buttons*/
+ul.social-buttons {
+    margin-bottom: 0;
+}
 
+ul.social-buttons li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 40px;
+    outline: 0;
+    color: #fff;
+    background-color: #222;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+ul.social-buttons li a:hover {
+    background-color: #cc0000;
+}
+
+/*Background  Colors*/
+.background-red{
+    background-color: #822433;
+}
+
+.background-yellow{
+    background-color: #FDC82F;
+}
+.background-darkgray {
+    background-color: #222;
+}
+
+/*Lightbox*/
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
