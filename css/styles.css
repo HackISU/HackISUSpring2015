@@ -119,6 +119,22 @@ body {
     cursor: pointer;
 }
 
+.button5 {
+    background-color: #822433;
+    padding: 15px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #822433;
+    display: inline-block;
+    color: icon-yellow;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1.5vw;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
 .button:hover{
   background-color: rgba(255,255,255,.3);
   color: #822433;
@@ -499,10 +515,10 @@ header .intro-text .intro-heading {
 }
 
 @media(min-width:768px) {
-    header .intro-text {
+    /*header .intro-text {
         padding-top: 200px;
         padding-bottom: 200px;
-    }
+    }*/
 
     header .intro-text .intro-lead-in {
         margin-bottom: 25px;

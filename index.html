@@ -51,12 +51,13 @@
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header page-scroll">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                      <span class="sr-only">Toggle navigation</span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                  </button>
-        <!-- Old hackisu button that took you to the top of the page -->
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+
+        <!-- Old home button that took you to the top of the page -->
         <a class="navbar-brand page-scroll" href="#page-top">Home</a>
       </div>
 
@@ -69,6 +70,7 @@
           <li><a class="page-scroll" href="#sponsors">Sponsors</a></li>
           <li><a class="page-scroll" href="#timeline">Timeline</a></li>
           <li><a class="page-scroll" href="#faq">FAQ</a></li>
+
           <!-- TODO Uncomment when registration starts -->
           <li class="apply" style="cursor:pointer"> <a onclick="toMLH()">Register</a> </li>
         </ul>
@@ -91,9 +93,10 @@
 
           <!-- Submit Project! -->
 
-          <!-- TODO Uncomment when registration starts -->
+
+          <!-- TODO Comment out when HackISU starts -->
           <h2 class="section-heading icon-red">Summoning fellow hackers!</h2>
-  		         <button onclick="toMLH()" class="button" href="" style="margin-top:10px">Register Here!</button>
+  		    <button onclick="toMLH()" class="button" href="" style="margin-top:10px">Register Here!</button>
 
           <!-- TODO Uncomment when event is over! -->
           <!-- <h2 class="intro-reg-closing icon-red">Thanks for attending the Fall HackISU! Check back soon to register for the spring event!</h2> -->
@@ -103,7 +106,16 @@
             <li><a href="https://www.facebook.com/HackISU"><i class="fa fa-facebook"></i></a></li>
             <li><a href="https://www.instagram.com/hack_isu"><i class="fa fa-instagram"></i></a></li>
             <li><a href="https://www.medium.com/@hackiowastate"><i class="fa fa-medium"></i></a></li>
+            <!-- Will need to be updated every hackathon. Comment out a couple weeks after hackathon -->
+            <li><a href="https://hackisuviii.slack.com"><i class="fa fa-slack"></i></a></li>
           </ul>
+
+          <!-- Buttons to the hardware list and prize list -->
+          <div style="padding-top: 100px;">
+            <a href="prizelist.html" class="button" role="button">Prize List</a>
+            <a href="hardwarelist.html" class="button" role="button">Hardware List</a>
+          </div>
+
         </div>
       </div>
     </div>
@@ -174,7 +186,7 @@
       <!-- Sponsor Images -->
       <div class="row">
         <div class="col-sm-12" style="text-align:center">
-          <a href="http://workiva.com" target="_blank"><img src="./img/sponsors/Workiva-Logo-Digital_and_Web.png"/></a>
+          <a href="http://workiva.com" target="_blank"><img src="./img/sponsors/Workiva-Logo-Digital_and_Web.png" style="width:65%" /></a>
         </div>
       </div>
 
@@ -208,39 +220,55 @@
       </div>
 
       <div class="row">
-        <div class="col-sm-3" style="text-align:center">
-          <a href="http://www.cerner.com/" target="_blank"><img src="./img/sponsors/cerner.png" style="width:85%; padding-top: 40px;"/></a>
+        <div class="col-sm-1" style="text-align:center"></div>
+
+        <div class="col-sm-2" style="text-align:center">
+          <a href="http://www.cerner.com/" target="_blank"><img src="./img/sponsors/cerner.png" style="width:100%; padding-top: 40px;"/></a>
         </div>
 
-        <div class="col-sm-3" style="text-align:center">
-          <a href="http://mixmax.com" target="_blank"><img src="./img/sponsors/mixmax.png" style="width:45%; padding-top: 20px;" /></a>
+        <div class="col-sm-2" style="text-align:center">
+          <a href="http://mixmax.com" target="_blank"><img src="./img/sponsors/mixmax.png" style="width:65%; padding-top: 20px;" /></a>
         </div>
 
-        <div class="col-sm-3" style="text-align:center">
-          <a href="http://www.garmin.com" target="_blank"><img src="./img/sponsors/Garmin_logo.png" style="width:70%; padding-top: 35px;" /></a>
+        <div class="col-sm-2" style="text-align:center">
+          <a href="http://www.garmin.com" target="_blank"><img src="./img/sponsors/Garmin_logo.png" style="width:95%; padding-top: 35px;" /></a>
         </div>
 
-        <div class="col-sm-3" style="text-align:center">
-          <a href="https://www.globalvetlink.com/" target="_blank"><img src="./img/sponsors/GVL.png" style="width:80%; padding-top: 53px;" /></a>
+        <div class="col-sm-2" style="text-align:center">
+          <a href="https://www.globalvetlink.com/" target="_blank"><img src="./img/sponsors/GVL.png" style="width:100%; padding-top: 53px;" /></a>
         </div>
+
+        <div class="col-sm-2" style="text-align:center">
+          <a href="https://www.telligen.com" target="_blank"><img src="./img/sponsors/BW_With_Tag.png" style="width:100%; padding-top: 25px;" /></a>
+        </div>
+
+        <div class="col-sm-1" style="text-align:center"></div>
       </div>
 
       <div class="row" style="padding:20px;">
-        <div class="col-sm-3" style="text-align:center">
-          <a href="http://tradebot.com" target="_blank"><img src="./img/sponsors/tradebot.png" style="width:60%; padding-top: 35px"/></a>
+        <div class="col-sm-1" style="text-align:center"></div>
+
+        <div class="col-sm-2" style="text-align:center">
+          <a href="http://tradebot.com" target="_blank"><img src="./img/sponsors/tradebot.png" style="width:80%; padding-top: 33px"/></a>
         </div>
 
-        <div class="col-sm-3" style="text-align:center">
-          <a href="http://spreetail.com" target="_blank"><img src="./img/sponsors/spreetail.png" style="width:50%; padding-top: 20px;"/></a>
+        <div class="col-sm-2" style="text-align:center">
+          <a href="http://spreetail.com" target="_blank"><img src="./img/sponsors/spreetail.png" style="width:70%; padding-top: 25px;"/></a>
         </div>
 
-        <div class="col-sm-3" style="text-align:center">
-          <a href="http://www.wellsfargo.com/" target="_blank"><img src="./img/sponsors/wells-fargo.png" style="width:24%; padding-top: 20px;"/></a>
+        <div class="col-sm-2" style="text-align:center">
+          <a href="http://www.wellsfargo.com/" target="_blank"><img src="./img/sponsors/wells-fargo.png" style="width:40%; padding-top: 20px;"/></a>
         </div>
 
-        <div class="col-sm-3" style="text-align:center">
-          <a href="https://www.principal.com/" target="_blank"><img src="./img/sponsors/principal_financial_logo.png" style="width:63%; padding-top: 25px;"/></a>
+        <div class="col-sm-2" style="text-align:center">
+          <a href="https://www.principal.com/" target="_blank"><img src="./img/sponsors/principal_financial_logo.png" style="width:80%; padding-top: 25px;"/></a>
         </div>
+
+        <div class="col-sm-2" style="text-align:center">
+          <a href="https://ultrapress.com" target="_blank"><img src="./img/sponsors/UP_Logo_white.png" style="width:80%; padding-top: 30px;"/></a>
+        </div>
+
+        <div class="col-sm-1" style="text-align:center"></div>
       </div>
 
       <!-- Partner Images -->
@@ -284,7 +312,6 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading icon-red">FAQ</h2>
-          <h3 class="section-subheading">Frequently Asked Questions</h3>
         </div>
         <canvas class="all hideOnMobile" style="margin-top:-100%;"></canvas>
       </div>
@@ -442,6 +469,8 @@
         <li><a href="https://www.facebook.com/HackISU"><i class="fa fa-facebook"></i></a></li>
         <li><a href="https://www.instagram.com/hack_isu"><i class="fa fa-instagram"></i></a></li>
         <li><a href="https://www.medium.com/@hackiowastate"><i class="fa fa-medium"></i></a></li>
+        <!-- Will need to be updated every hackathon. Comment out a couple weeks after hackathon -->
+        <li><a href="https://hackisuviii.slack.com"><i class="fa fa-slack"></i></a></li>
       </ul>
       <span class="copyright">&hearts; - HackISU Committee 2017</span>
     </div>
