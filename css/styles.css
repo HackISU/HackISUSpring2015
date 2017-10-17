@@ -103,6 +103,28 @@ body {
     cursor: pointer;
 }
 
+.buttonMainPage {
+    background-color: #822433;
+    padding: 15px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #822433;
+    display: inline-block;
+    color: white;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 2.5vw;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+}
+.buttonMainPage:hover{
+  background-color: rgba(255,255,255,.3);
+  color: #822433;
+  text-decoration: none;
+}
+
 .button3 {
     background-color: #FDC82F;
     padding: 15px;
