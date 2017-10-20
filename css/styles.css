@@ -721,6 +721,11 @@ section h3.section-subheading {
     margin-top: 10px;
 }
 
+.fmf {
+    left: 6px !important;
+    bottom: -19px
+}
+
 .timeline-ending h4 {
     padding-top: 10px;
 }
